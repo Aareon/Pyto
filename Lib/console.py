@@ -631,7 +631,7 @@ if "widget" not in os.environ:
 
         sys.path = list(dict.fromkeys(sys.path))  # I don't remember why 😭
 
-        if "widget" not in os.environ:
+        if "widget" not in os.environ and is_watch_script:
             import watch
 
             watch.__show_ui_if_needed__()
